@@ -24,18 +24,19 @@ setInterval(makeClock, 100);
  function inverse(theString) {
     theString=theString.toLowerCase();
     var validHexChar=/[^a-f0-9]/gi
-    a=theString.slice(0,2);
-    b=theString.slice(2,4);
-    c=theString.slice(4,6);
-    a1=16*giveHex(a.slice(0,1));
-    a2=giveHex(a.slice(1,2));
+    var a=theString.slice(0,2);
+    var b=theString.slice(2,4);
+    var c=theString.slice(4,6);
+    var a1=16*giveHex(a.slice(0,1));
+    var a2=giveHex(a.slice(1,2));
     a=a1+a2;
-    b1=16*giveHex(b.slice(0,1));
-    b2=giveHex(b.slice(1,2));
+    var b1=16*giveHex(b.slice(0,1));
+    var b2=giveHex(b.slice(1,2));
     b=b1+b2;
-    c1=16*giveHex(c.slice(0,1));
-    c2=giveHex(c.slice(1,2));
+    var c1=16*giveHex(c.slice(0,1));
+    var c2=giveHex(c.slice(1,2));
     c=c1+c2;
+    
     newColor=DecToHex(255-a)+""+DecToHex(255-b)+""+DecToHex(255-c)
     document.getElementById('color').style.backgroundColor = '#' + newColor;
     
