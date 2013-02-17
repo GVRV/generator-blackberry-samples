@@ -103,4 +103,4 @@ bb.init({actionBarDark: true,
     }
 });
 
-bb.pushScreen('includes/clock.html','clock');
+bb.pushScreen('includes/clock.htm','clock');
