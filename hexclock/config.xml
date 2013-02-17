@@ -1,0 +1,7 @@
+    <feature id="blackberry.bbm.platform" />
+    <feature id="blackberry.invoke" />
+    <feature id="blackberry.invoke.card" />
+    <feature id="blackberry.system" />
+    <feature id="blackberry.app.orientation">
+        <param name="mode" value="landscape" />
+    </feature>
